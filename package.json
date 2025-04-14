@@ -1,0 +1,23 @@
+{
+    "name": "Sets",
+    "module": "index.ts",
+    "type": "module",
+    "version": "1.0",
+    "author": "koo0ki",
+    "private": true,
+    "devDependencies": {
+        "@types/bun": "latest"
+    },
+    "scripts": {
+        "start": "bun run src/index.ts"
+    },
+    "peerDependencies": {
+        "typescript": "^5"
+    },
+    "dependencies": {
+        "@napi-rs/canvas": "^0.1.68",
+        "colors": "^1.4.0",
+        "discord.js": "^14.18.0",
+        "ms": "^2.1.3"
+    }
+}
