@@ -4,7 +4,7 @@
 
 > ## Пример
 
-![visual](./assets/Example.png)
+![visual](./Assets/Example.png)
 
 > ## Запуск
 
