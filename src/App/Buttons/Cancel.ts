@@ -50,6 +50,8 @@ export default new BaseComponent(
             components: [],
         });
 
+        client.storage.cache.recruitment.delete(`${targetId}.${roleId}`);
+
         return button.reply({
             embeds: [
                 client.storage.embeds.default(

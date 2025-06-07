@@ -38,6 +38,8 @@ export class Components {
 
                 this.cache.set(component.options.name, component);
             }
-        } catch {}
+        } catch {
+            this.client.logger.error(`Failed to load ${this.type}`);
+        }
     }
 }

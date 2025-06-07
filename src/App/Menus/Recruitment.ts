@@ -31,6 +31,13 @@ export default new BaseComponent(
             });
         }
 
+        if (client.storage.cache.recruitment.has(`${menu.user.id}.${roleId}`)) {
+            return menu.reply({
+                content: "Вы уже отправили заявку",
+                flags: MessageFlags.Ephemeral,
+            });
+        }
+
         return menu.showModal(
             new ModalBuilder()
                 .setTitle(

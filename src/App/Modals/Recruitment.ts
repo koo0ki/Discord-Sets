@@ -89,6 +89,8 @@ export default new BaseComponent(
             ),
         });
 
+        client.storage.cache.recruitment.set(`${modal.user.id}.${roleId}`, Date.now().toString());
+
         return modal.reply({
             embeds: [
                 client.storage.embeds.default(

@@ -61,6 +61,8 @@ export default new BaseComponent(
             await target.roles.add(roleId).catch(() => {});
         }
 
+        client.storage.cache.recruitment.delete(`${targetId}.${roleId}`);
+
         return button.reply({
             embeds: [
                 client.storage.embeds.default(

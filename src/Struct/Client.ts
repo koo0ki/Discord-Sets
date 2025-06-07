@@ -6,6 +6,7 @@ import { Utils } from "./Helpers/Utils";
 import { Embeds } from "./Helpers/Storage/EmbedBuilder";
 import { RowBuilder } from "./Helpers/Storage/RowBuilder";
 import { Components, type component } from "./Handlers/Components";
+import Cache from "./Helpers/Storage/Cache";
 
 export default class extends Client<true> {
     public readonly config = Config;
@@ -22,6 +23,7 @@ export default class extends Client<true> {
     public storage = {
         embeds: new Embeds(this),
         rows: new RowBuilder(this),
+        cache: Cache,
     };
 
     public ls = new Listeners(this);
